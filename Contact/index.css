@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Nabla:EDPT@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: aliceblue;
+      font-family: "Google Sans", sans-serif;
+
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: #ff0000;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 35px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-icon {
+    display: flex;
+    gap: 10px;
+}
+
+footer:hover {
+    color: blue;
+    cursor: alias;
+}
+.main{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.input-box{
+    width: 70%;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.input-detail{
+    line-height: 40px;
+    margin-left: 50px;
+}
+.name-number{
+    border-radius: 5px;
+    height: 30px;
+    width: 43%;
+}
+.name,.number{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+.comments{
+    border-radius:5px ;
+    width: 90%;
+    height:70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.email{
+    margin-top: 50px;
+}
+.sub{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0px 0px 0px 250px;
+    
+}
+.sub-but{
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin:10px auto;
+    color: whitesmoke;
+    background-color: #ff0000;
+    font-weight: bold;
+}
+input::placeholder{
+    text-align: center;
+}
+.contact-row{
+display: flex;
+justify-content:space-around;
+padding: 20px ;
+gap: 8px;
+background-color: rgb(231, 136, 136);
+flex-wrap: wrap;
+line-height: 30px;
+}
+.final{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    color:rgb(37, 37, 240);
+    gap: 30px;
+    background-color: rgb(231, 136, 136);
+    flex-wrap: wrap;
+    line-height: 30px;
+}
+.app{
+display: flex;
+flex-direction: column;
+ align-items: center;
+}
+.final p{
+    color: black;
+    margin-left: -35px;
+    margin-bottom: 10px;
+}
+.contact-row p{
+    color: rgb(37, 37, 240);
+    margin-left:-10px;
+
+}
+.row-icon{
+    font-size: 40px;
+}
+.move-right{
+    margin-left:-25px;
+}
+
+/* Media query-Mobiles */
+@media(max-width: 576px) {
+     header {
+        flex-direction: column;
+        height: auto;
+        padding: 5px 0;
+    }
+     .logo-container {
+        margin-right: 18px;
+    }
+
+    ul {
+        margin: 1px 0;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .sub{
+        margin: auto;
+    }
+   
+    .comments{
+        margin-left: -30px;
+    }
+    .head{
+        margin-left: -0PX;
+    }
+    .contact-row{
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .final{
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    .bike{
+        margin-left:-30px;
+    }
+    .other,.icon{
+        margin-left:-70px;
+    }
+    
+}
+
+/* Media query-Tablet */
+
+@media(min-width:576px) and (max-width:992px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    ul {
+        margin: 5px 0;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .sub{
+        margin: auto;
+    }
+    
+
+}
+
+@media(min-width:993px) and (max-width:1199px){
+    ul{
+        gap: 40px;
+    }
+}
+
+@media(min-width:1200px){
+ul{
+    gap: 50px;
+}
+}

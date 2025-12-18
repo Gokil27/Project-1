@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playwrite+NO:wght@100..400&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Prop+Double+Ink:wght@100..900&family=Changa+One:ital@0;1&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Nabla:EDPT@200&family=Playwrite+NO:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #111;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 100;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: #ff0000;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-right: 35px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightgray;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: #ff0000;
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    letter-spacing: 1px;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero-content {
+    font-weight: 500;
+    background: linear-gradient(90deg, #ff0000, orange, white, yellow, #ff0000);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Bitcount Grid Single", system-ui;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-350px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.bg-img {
+    background-image: url(../Image/bike_car.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 5px;
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+    margin-top: 70px;
+    animation: slideout 2s ease-in-out;
+}
+
+@keyframes slideout {
+    0% {
+        opacity: 0;
+        transform: translateY(650px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+.bike-item,
+.car-item,
+.cycle-item {
+    width: 250px;
+    height: 380px;
+    background-color: #222;
+    padding: 8px;
+    margin: 20px auto;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.bike-list,
+.car-list,
+.cycle-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.list_head {
+    text-align: center;
+    color: #ff0000;
+}
+
+h3 {
+    color: #ff0000;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.bike-item:hover,
+.car-item:hover,
+.cycle-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 9px 20px rgba(255, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.price {
+    color: #9aa0a6;
+    margin: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+.bike_image,
+.car_image,
+.cycle_image {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: fill;
+}
+
+.price1 {
+    color: #9aa0a6;
+    margin: 15px;
+    letter-spacing: 1px;
+    font-family: "Bitcount Prop Double Ink", system-ui;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.social-icon {
+    display: flex;
+    gap: 10px;
+
+}
+
+footer:hover {
+    color: blue;
+    cursor: alias;
+}
+
+/* Media query-Mobiles */
+@media(max-width:576px) {
+    nav ul {
+        gap: 10px;
+        padding: 10px 0px;
+        margin-left: 25px;
+    }
+
+    header {
+        margin: 0px 0px;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        font-size: 25px;
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 20px;
+    }
+
+    .logo-container {
+        margin-right: 50px;
+    }
+
+    .bike-list,
+    .car-list,
+    .cycle-list {
+        flex-wrap: wrap;
+    }
+
+    .bike-item,
+    .car-item,
+    .cycle-item {
+        min-width: 260px;
+    }
+
+}
+
+/* Media query-Tablet */
+@media(min-width:576px) and (max-width:992px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        gap: 50px;
+        padding: 10px 0px;
+    }
+
+    .logo-container {
+        margin-right: 50px;
+    }
+
+    .bike-list,
+    .car-list,
+    .cycle-list {
+        flex-wrap: wrap;
+        padding: 0px 0px;
+        margin: 0px 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .bike-item,
+    .car-item,
+    .cycle-item {
+        min-width: 290px;
+    }
+}
+
+/* Media Query-Mini pc */
+@media(min-width:993px) and (max-width:1199px) {
+
+    .bike-list,
+    .car-list,
+    .cycle-list {
+        display: grid;
+        grid-template-columns: 1fr  1fr;
+    }
+
+    .bike-item,
+    .car-item,
+    .cycle-item {
+        min-width: 320px;
+    }
+
+}
+
+/* Media Query-Tv and Large screens */
+@media(min-width:1200px) {
+
+    
+    .bike-item,
+    .car-item,
+    .cycle-item {
+        min-width: 260px;
+    }
+}
