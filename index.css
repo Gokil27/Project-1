@@ -98,7 +98,7 @@ nav ul li a:hover {
 
 
 .bg-img {
-    background-image: url(../Image/bike_car.webp);
+    background-image: url(./Image/bike_car.webp);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     border-radius: 5px;
