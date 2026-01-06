@@ -117,7 +117,7 @@ input::placeholder {
 
 .main {
     position: relative;
-    min-height:100vh;
+    min-height: 100vh;
 }
 
 .main::before {
@@ -190,9 +190,10 @@ aside {
     border: none;
     cursor: pointer;
 }
-.drop-but:hover{
-background-color: #ff0000;
-transform: scale(1.1);
+
+.drop-but:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
 }
 
 .drop-head {
@@ -236,6 +237,7 @@ transform: scale(1.1);
     margin: 0 auto;
     display: block;
 }
+
 .img-bike1:hover {
     transform: rotateY(180deg);
     transition: transform 1s ease;
@@ -298,7 +300,7 @@ transform: scale(1.1);
 }
 
 .specs-emi {
-    background-color:aliceblue;
+    background-color: aliceblue;
     display: flex;
     flex-direction: column;
     margin: 20px;
@@ -375,9 +377,10 @@ transform: scale(1.1);
     width: 100%;
     max-width: 200px;
 }
-.emi-button:hover{
-background-color: #2e89ca;
-border: solid rgba(0, 0, 0, 0.219);
+
+.emi-button:hover {
+    background-color: #2e89ca;
+    border: solid rgba(0, 0, 0, 0.219);
 }
 
 .img-emi {
@@ -479,6 +482,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+
 hr {
     margin: 30px 20px;
     border: dotted;
@@ -491,108 +495,123 @@ hr {
     header {
         flex-direction: column;
         height: auto;
-        padding: 10px 0;
-        position: relative;
-    }
-    .main{
-        margin-top: -20px;
+        padding: 0;
     }
 
-    
-    .search-bar {
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .logo-container {
-        margin: 10px 0;
-    }
-    
-    .head {
-        font-size: 24px;
-    }
-    
     ul {
-        margin: 10px 0;
+        margin: 5px 0;
         gap: 15px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
+    aside {
+        margin: 0px auto;
+        padding: 17px;
+    }
+
+    .main {
+        margin-top: 80px;
+    }
+
+
+    .search-bar {
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container {
+        margin: 10px 0;
+    }
+
+    .head {
+        font-size: 24px;
+    }
+
+
     nav ul li a {
         font-size: 18px;
     }
-    
-    .user, .language {
+
+    .user,
+    .language {
         margin-top: 10px;
         font-size: 16px;
     }
-    
+
+    .language {
+        margin-top: 0px;
+        font-size: 16px;
+    }
+
     .search {
         width: 100%;
         max-width: 400px;
         height: 45px;
         font-size: 16px;
     }
-    
+
     .Hero-content {
         font-size: 28px;
         margin: 20px auto;
     }
-    
+
     .bike1 {
         margin: 10px;
         padding: 15px;
     }
-    
+
     .bike-content1 h1 {
         font-size: 24px;
     }
-    
+
     .offer-button {
         font-size: 16px;
     }
-    
+
     .specs-emi {
         margin: 10px;
     }
-    
-    .specs, .emi {
+
+    .specs,
+    .emi {
         padding: 15px;
     }
-    
-    
+
+
     .allspec {
         flex-direction: column;
         padding: 10px;
     }
-    
-    .spec-left, .spec-right {
+
+    .spec-left,
+    .spec-right {
         min-width: 100%;
         margin: 5px 0;
     }
-    
-    .spec-label, .spec-value {
+
+    .spec-label,
+    .spec-value {
         font-size: 14px;
         padding: 6px 0;
     }
-    
+
     .boxes {
         gap: 15px;
         margin: 15px 0;
     }
-    
+
     .brand1 {
         width: 90px;
         height: 100px;
     }
-    
+
     .img-brand1 {
         height: 50px;
         width: 80px;
     }
-    
+
     footer {
         flex-direction: column;
         height: auto;
@@ -609,70 +628,71 @@ hr {
         height: auto;
         padding: 15px 0;
     }
-    
+
     .search-bar {
         margin-top: 100px;
         gap: 20px;
         padding: 20px;
     }
-    
+
     .search {
         width: 80%;
         max-width: 600px;
     }
-    
+
     .Hero-content {
         font-size: 36px;
         margin: 30px auto;
     }
-    
+
     .bike1 {
         flex-direction: row;
-        align-items:flex-start;
+        align-items: flex-start;
     }
-    
+
     .img-bike1 {
         width: 75%;
         max-width: 400px;
         margin: 0;
     }
-    
+
     .bike-content1 {
         width: 55%;
         margin: 0 0 0 20px;
     }
-    
+
     .specs-emi {
         flex-direction: row;
         flex-wrap: wrap;
     }
-    
+
     .specs {
         width: 100%;
         margin-bottom: 20px;
     }
-    
+
     .emi {
         width: 100%;
         /* max-width: 100%; */
         margin: auto;
     }
-    
-    
+
+
     .allspec {
         justify-content: space-around;
     }
-    
-    .spec-left, .spec-right {
+
+    .spec-left,
+    .spec-right {
         max-width: 45%;
         margin: 10px 0;
     }
-    
+
     .boxes {
         margin: 30px 0;
         justify-content: center;
     }
-    
+
     aside {
         margin: 30px auto;
     }
@@ -684,47 +704,48 @@ hr {
         font-size: 42px;
         margin: 40px auto;
     }
-    
+
     .bike1 {
         flex-direction: row;
         align-items: flex-start;
     }
-    
+
     .img-bike1 {
         width: 40%;
         margin: 30px 20px 30px 30px;
     }
-    
+
     .bike-content1 {
         width: 60%;
         margin: 30px 30px 30px 0;
     }
-    
+
     .specs-emi {
         flex-direction: row;
         justify-content: space-between;
     }
-    
+
     .specs {
         width: 60%;
         margin-right: 20px;
     }
-    
+
     .emi {
         width: 35%;
         margin: 0;
     }
-    
-   
+
+
     .allspec {
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    .spec-left, .spec-right {
+
+    .spec-left,
+    .spec-right {
         max-width: 48%;
     }
-    
+
     .aside-hero {
         flex-direction: row;
         align-items: flex-start;
@@ -732,12 +753,12 @@ hr {
         gap: 40px;
         padding: 40px 20px;
     }
-    
+
     aside {
         margin: 0;
         flex-shrink: 0;
     }
-    
+
     .Hero-content {
         flex-grow: 1;
         /* text-align: left; */
@@ -754,72 +775,73 @@ hr {
         margin: 40px auto;
         max-width: 1400px;
     }
-    
+
     .bike1 {
         flex-direction: row;
         align-items: flex-start;
         max-width: 1230px;
         margin: 30px auto;
     }
-    
+
     .img-bike1 {
         width: 85%;
         margin: 30px 0px;
     }
-    
+
     .bike-content1 {
         width: 55%;
         margin: 30px;
     }
-    
+
     .specs-emi {
         flex-direction: row;
         justify-content: space-around;
         max-width: 1400px;
         margin: 30px auto;
     }
-    
+
     .specs {
         width: 65%;
     }
-    
+
     .emi {
         width: 30%;
         margin: 0;
     }
-    
+
     .allspec {
         flex-direction: row;
         justify-content: space-around;
     }
-    
-    .spec-left, .spec-right {
+
+    .spec-left,
+    .spec-right {
         max-width: 350px;
     }
-    
+
     .aside-hero {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
         padding: 50px 100px;
         max-width: 1400px;
-          }
-    
+    }
+
     aside {
         margin: 0;
 
     }
-    
+
     .Hero-content {
         /* flex-grow: 1; */
         margin-top: -10px;
-        }
-    
+    }
+
     .all-brands {
         max-width: 1400px;
         margin: 30px 50px;
     }
-    
+
     .boxes {
         justify-content: center;
         gap: 30px;
